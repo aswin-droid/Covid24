@@ -58,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
                         progressDialog.show();
 
                         validateLogin();
+
                     } else {
                         Toast.makeText(getApplicationContext(), "Please enter Password", Toast.LENGTH_SHORT).show();
                     }
@@ -79,6 +80,8 @@ public class LoginActivity extends AppCompatActivity {
 
                                 progressDialog.dismiss();
 
+                                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                                startActivity(intent);
                                 Toast.makeText(getApplicationContext(), "Login Success", Toast.LENGTH_SHORT).show();
                             }
                         }

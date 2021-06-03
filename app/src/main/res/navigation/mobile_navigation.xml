@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.covid24.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.covid24.ui.notifications.NotificationsFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_noti" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.covid24.ui.precautionary.PrecautionaryFragment"
+        android:label="Precautionary measures"
+        tools:layout="@layout/fragment_precautionary" />
+    <fragment
+        android:id="@+id/districtFragment"
+        android:name="com.example.covid24.ui.districtwisecount.DistrictFragment"
+        android:label="DistrictFragment"
+        tools:layout="@layout/fragment_district"/>
+    <fragment
+        android:id="@+id/facemaskFragment"
+        android:name="com.example.covid24.ui.facemask.FacemaskFragment"
+        android:label="FacemaskFragment"
+        tools:layout="@layout/fragment_facemask"/>
+    <fragment
+        android:id="@+id/helplineFragment"
+        android:name="com.example.covid24.ui.helpline.HelplineFragment"
+        android:label="HelplineFragment"
+        tools:layout="@layout/fragment_helpline"/>
+</navigation>

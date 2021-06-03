@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_notifications"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_precaution"
+            android:title="Precautionary measures" />
+        <item
+            android:id="@+id/facemaskFragment"
+            android:icon="@drawable/ic_face_mask"
+            android:title="Face Mask Tips" />
+        <item
+            android:id="@+id/districtFragment"
+            android:icon="@drawable/ic_district"
+            android:title="District wise count" />
+        <item
+            android:id="@+id/helplineFragment"
+            android:icon="@drawable/ic_helpline"
+            android:title="helpline" />
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/ic_logout"
+            android:onClick="LogoutUser"
+            android:title="Logout" />
+
+    </group>
+</menu>
